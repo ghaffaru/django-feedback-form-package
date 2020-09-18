@@ -8,7 +8,7 @@ Feedback form package is a Django app to create and handle feedback forms on you
 Quick start
 -----------
 
-1. Add "polls" to your INSTALLED_APPS setting like this::
+1. Add "feedback" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
@@ -33,5 +33,9 @@ Quick start
     EMAIL_TO = 'xxx@gmail.com'
     EMAIL_FROM= 'ghaff@gmail.com' # Connected to the mail service
 
-5. Start the development server and visit http://127.0.0.1:8000/feedback/
+5. Start the development server::
+
+    ./manage.py runserver
+
+6. Visit http://127.0.0.1:8000/feedback/
    to create see the glory. Dont mind the UI, this is v1, haha.
