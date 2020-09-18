@@ -82,6 +82,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -119,3 +120,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_USE_TLS = True
+
+# Email to use for sending mails
+EMAIL_FROM='gm@credmap.com'
+# Email to send feedback
+EMAIL_TO='mudashiruagm@gmail.com'
+

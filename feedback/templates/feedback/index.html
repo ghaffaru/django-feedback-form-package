@@ -8,9 +8,19 @@
 <body>
     <div class="container">
         <h2>Provide Feedback</h2>
-        {{ form }}
+        {% if note %}
+            <div class="alert alert-primary" role="alert">
+            {{ note }}
+        </div>
+        {% endif %}
+        <form action="feedback" method="POST" novalidate>
+            {% csrf_token %}
+             {{ form.as_p }}
+
         <br>
         <input type="submit" value="Submit" class="btn btn-primary"/>
+        </form>
+
     </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
